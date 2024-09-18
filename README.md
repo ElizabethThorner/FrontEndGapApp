@@ -1,5 +1,7 @@
 Set up your virtual environment and clone the rebabel repository. Install rebabel but also install pyinstaller <code>pip3 install pyinstaller</code>.
 
+Take the main.py file and place it into the rebabel-format directory where the make file is.
+
 Copy the buildExe directory to the level of the rebabel-format directory. In the dist directory in buildExe there also should be a config.toml and a flextext file.
 
 cd into buildExe run the command <code>pyinstaller main.spec</code> The paths should be set in the main.spec file, so if there is an error that could be an issue.
