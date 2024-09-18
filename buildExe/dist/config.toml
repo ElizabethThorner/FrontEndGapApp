@@ -1,0 +1,7 @@
+# the same database file will be used for all workflows
+db = "demo.db"
+
+# these next parameters only apply to the "import" action
+[import]
+mode = "flextext"
+infiles = ["lez-all_txts.flextext"]

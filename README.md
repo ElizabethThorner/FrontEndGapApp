@@ -1,13 +1,7 @@
-## Gap App - Senior Project (CIS4914)
+Set up your virtual environment and clone the rebabel repository. Install rebabel but also install pyinstaller <code>pip3 install pyinstaller</code>.
 
-### Group Members
-- Joseph Barron: Backend Developer/Scrum Master 
-- Adassa Coimin: Frontend/Backend Developer 
-- Matthew Denslinger: Frontend Developer  
-- Elizabeth Thorner: Backend Developer/Project Manager  
-- Darren Wang: Frontend Developer
+Copy the buildExe directory to the level of the rebabel-format directory. In the dist directory in buildExe there also should be a config.toml and a flextext file.
 
+cd into buildExe run the command <code>pyinstaller main.spec</code> The paths should be set in the main.spec file, so if there is an error that could be an issue.
 
-### Abstract 
-
-Linguists use a variety of software tools to document endangered languages. They frequently need to move language data stored in one program into another, a process for which no automated and user-friendly tool exists. There is also no efficient way to import language data from the output of natural language processing (NLP) models into these software tools. The Gap App desktop application will enable linguists to convert between NLP output files and language data file formats used by software like Fieldworks Language Explorer (FLEx) and ELAN. The app will facilitate the speedy conversion between language data formats through an easy-to-use interface. 
+cd into dist and in the dist directory you should have your executable there named main. Once you execute main with given commands it should run. For example, <code>./main --help</code> will print the help menu and if you run <code>./main import config.toml</code> that should successfully load the flextext file into the database. And the database demo.db should be created in the dist directory.
