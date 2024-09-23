@@ -6,6 +6,6 @@ Copy the buildExe directory to the level of the rebabel-format directory. In the
 
 cd into buildExe run the command <code>pyinstaller main.spec</code> The paths should be set in the main.spec file, so if there is an error that could be an issue.
 
-cd into dist and in the dist directory you should have your executable there named main. Once you execute main with given commands it should run. For example, <code>./main --help</code> will print the help menu and if you run <code>./main import config.toml</code> that should successfully load the flextext file into the database. And the database demo.db should be created in the dist directory.
+cd into dist and in the dist directory you should have your executable there named main. Once you execute main with given commands it should run. For example, <code>./rebabel --help</code> will print the help menu and if you run <code>./rebabel import config.toml</code> that should successfully load the flextext file into the database. And the database demo.db should be created in the dist directory.
 
 Some errors you might encounter could be that your virtual environment isn't activated, if the flextext has issues maybe get it from the slack and try again.
