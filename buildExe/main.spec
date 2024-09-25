@@ -5,7 +5,7 @@ a = Analysis(
     ['../rebabel-format/main.py'],
     pathex=[],
     binaries=[],
-    datas=[('../rebabel-format/rebabel_format/processes', 'rebabel_format/processes'), ('../rebabel-format/rebabel_format/converters', 'rebabel_format/converters'), ('../rebabel-format/rebabel_format/schema.sql', 'rebabel_format') ],
+    datas=[('../Gap-App/rebabel_format/processes', 'rebabel_format/processes'), ('../Gap-App/rebabel_format/converters', 'rebabel_format/converters'), ('../Gap-App/rebabel_format/schema.sql', 'rebabel_format') ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
