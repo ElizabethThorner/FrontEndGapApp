@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain, dialog } = require("electron");
+const os = require("node:os");
 const path = require("node:path");
 const { unlink } = require("node:fs");
 const util = require("node:util");
@@ -136,9 +137,12 @@ function initiateSaveAs(data) {
   //I.e. takes an infile abc.inExt and turns into abc.outExt
   let outputFileName = setOutputFileName(data);
 
+  const homeDir = os.homedir();
+  const documentsPath = path.join(homeDir, "Documents/");
+
   //Gets absolute path
   let outputFileNamePath = dialog.showSaveDialogSync({
-    defaultPath: outputFileName,
+    defaultPath: documentsPath + outputFileName,
   });
 
   //user cancels SaveAs
