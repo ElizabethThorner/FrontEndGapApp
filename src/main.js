@@ -138,7 +138,7 @@ function initiateSaveAs(data) {
   let outputFileName = setOutputFileName(data);
 
   const homeDir = os.homedir();
-  const documentsPath = path.join(homeDir, "Documents/");
+  const documentsPath = path.join(homeDir, "Documents") + path.sep;
 
   //Gets absolute path
   let outputFileNamePath = dialog.showSaveDialogSync({
